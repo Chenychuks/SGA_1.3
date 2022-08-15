@@ -35,11 +35,14 @@ class Bank_Account:
 
     def withdraw(self):
         amount = float(input("Enter the amount to withdraw: "))
+        
         if (Bank_Account.Balance > amount):
             Bank_Account.Balance = Bank_Account.Balance - amount
             print("Transaction sucessfull! Your account balance is:")
         else:
             print("Insuficient Balance")
+        
+        
 
 
 # Instantiation
